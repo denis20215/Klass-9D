@@ -1,0 +1,1301 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Cardo:400i|Open+Sans:700|Raleway:300,400,600,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Наш класс 9Г</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://atuin.ru/demo/js/anime.min.js"></script>
+</head>
+
+<body>
+
+    <!-- Sprite -->
+    <svg style="display: none;">
+
+        <symbol id="facebook" viewBox="0 0 430.113 430.114">
+            <g>
+                <path
+                    d="M158.081,83.3c0,10.839,0,59.218,0,59.218h-43.385v72.412h43.385v215.183h89.122V214.936h59.805
+                c0,0,5.601-34.721,8.316-72.685c-7.784,0-67.784,0-67.784,0s0-42.127,0-49.511c0-7.4,9.717-17.354,19.321-17.354
+                c9.586,0,29.818,0,48.557,0c0-9.859,0-43.924,0-75.385c-25.016,0-53.476,0-66.021,0C155.878-0.004,158.081,72.48,158.081,83.3z" />
+            </g>
+        </symbol>
+
+        <symbol id="twitter" viewBox="0 0 612 612">
+            <g>
+                <path
+                    d="M612,116.258c-22.525,9.981-46.694,16.75-72.088,19.772c25.929-15.527,45.777-40.155,55.184-69.411
+                c-24.322,14.379-51.169,24.82-79.775,30.48c-22.907-24.437-55.49-39.658-91.63-39.658c-69.334,0-125.551,56.217-125.551,125.513
+                c0,9.828,1.109,19.427,3.251,28.606C197.065,206.32,104.556,156.337,42.641,80.386c-10.823,18.51-16.98,40.078-16.98,63.101
+                c0,43.559,22.181,81.993,55.835,104.479c-20.575-0.688-39.926-6.348-56.867-15.756v1.568c0,60.806,43.291,111.554,100.693,123.104
+                c-10.517,2.83-21.607,4.398-33.08,4.398c-8.107,0-15.947-0.803-23.634-2.333c15.985,49.907,62.336,86.199,117.253,87.194
+                c-42.947,33.654-97.099,53.655-155.916,53.655c-10.134,0-20.116-0.612-29.944-1.721c55.567,35.681,121.536,56.485,192.438,56.485
+                c230.948,0,357.188-191.291,357.188-357.188l-0.421-16.253C573.872,163.526,595.211,141.422,612,116.258z" />
+            </g>
+        </symbol>
+
+        <symbol id="linkedin" viewBox="0 0 430.117 430.118">
+            <g>
+                <path d="M398.355,0H31.782C14.229,0,0.002,13.793,0.002,30.817v368.471
+                c0,17.025,14.232,30.83,31.78,30.83h366.573c17.549,0,31.76-13.814,31.76-30.83V30.817C430.115,13.798,415.904,0,398.355,0z
+                 M130.4,360.038H65.413V165.845H130.4V360.038z M97.913,139.315h-0.437c-21.793,0-35.92-14.904-35.92-33.563
+                c0-19.035,14.542-33.535,36.767-33.535c22.227,0,35.899,14.496,36.331,33.535C134.654,124.415,120.555,139.315,97.913,139.315z
+                 M364.659,360.038h-64.966V256.138c0-26.107-9.413-43.921-32.907-43.921c-17.973,0-28.642,12.018-33.327,23.621
+                c-1.736,4.144-2.166,9.94-2.166,15.728v108.468h-64.954c0,0,0.85-175.979,0-194.192h64.964v27.531
+                c8.624-13.229,24.035-32.1,58.534-32.1c42.76,0,74.822,27.739,74.822,87.414V360.038z M230.883,193.99
+                c0.111-0.182,0.266-0.401,0.42-0.614v0.614H230.883z" />
+            </g>
+        </symbol>
+
+        <symbol id="geography" viewBox="0 0 24 24">
+            <g>
+                <path
+                    d="M21.9,7.59l-1-3.87A3,3,0,0,0,17.19,1.6l-1.93.52a1,1,0,0,0-.71,1.23l.26,1L4.19,7.16a1,1,0,0,0-.71,1.22l.26,1-1,.26a1,1,0,0,0,.25,2,1.09,1.09,0,0,0,.26,0l1-.27.26,1a1,1,0,0,0,.46.6,1,1,0,0,0,.5.14.75.75,0,0,0,.26,0L9,12.08v.42a2.9,2.9,0,0,0,.3,1.28l-5,5a1,1,0,0,0,1.41,1.42l5-5,.28.11V21.5a1,1,0,0,0,2,0V15.32a2.52,2.52,0,0,0,.29-.12l5,5a1,1,0,1,0,1.41-1.42l-5-5A3.09,3.09,0,0,0,15,12.5v-2l1.35-.36.25,1a1,1,0,0,0,1,.74l.26,0,1.93-.52A3,3,0,0,0,21.9,7.59ZM13,12.5a1,1,0,0,1-.28.69h0v0a1,1,0,0,1-.69.28,1,1,0,0,1-.7-.29h0a1,1,0,0,1-.29-.7v-1L13,11ZM6.19,10.76,5.67,8.83l9.66-2.59.26,1,.26,1Zm13.68-1.9a1,1,0,0,1-.61.47l-1,.26-.78-2.9L17,4.76h0l-.26-1,1-.26a1,1,0,0,1,1.23.71l1,3.87A1,1,0,0,1,19.87,8.86Z" />
+            </g>
+        </symbol>
+
+        <symbol id="vk" viewBox="0 0 14.171 14.171">
+            <g>
+                <path style="fill:#000"
+                    d="M13.268,0H0.905C0.405,0,0,0.405,0,0.904v12.363c0,0.499,0.405,0.904,0.905,0.904h12.362
+                c0.499,0,0.904-0.405,0.904-0.904V0.904C14.172,0.404,13.767,0,13.268,0z M11.755,8.635c0.259,0.264,0.821,0.707,0.719,1.158
+                c-0.094,0.414-0.712,0.263-1.312,0.287c-0.685,0.029-1.091,0.044-1.503-0.287C9.465,9.636,9.351,9.45,9.165,9.242
+                C8.996,9.054,8.783,8.717,8.493,8.73C7.972,8.756,8.135,9.482,7.95,9.977c-2.896,0.456-4.059-1.333-5.085-3.069
+                C2.368,6.067,1.65,4.261,1.65,4.261l2.048-0.007c0,0,0.657,1.195,0.831,1.503c0.148,0.262,0.311,0.47,0.479,0.704
+                c0.141,0.194,0.364,0.574,0.608,0.543c0.397-0.051,0.469-1.591,0.223-2.107C5.741,4.688,5.506,4.615,5.263,4.544
+                C5.345,4.026,7.56,3.918,7.918,4.32c0.52,0.584-0.36,2.21,0.352,2.684c1-0.524,1.854-2.718,1.854-2.718l2.398,0.015
+                c0,0-0.375,1.186-0.768,1.712c-0.229,0.308-0.989,0.994-0.959,1.503C10.819,7.919,11.437,8.311,11.755,8.635z" />
+            </g>
+        </symbol>
+
+        <symbol id="internet" viewBox="0 0 512 512">
+            <g>
+                <path style="fill:rgb(0, 0, 0)"
+                    d="m507.582 413.78-71.942-74.676c24.084-35.899 36.789-77.652 36.789-121.167 0-61.467-26.17-120.387-71.799-161.652-7.189-6.506-17.253 4.621-10.061 11.125 22.132 20.015 39.333 44.496 50.749 71.442h-96.347c-9.036-53.675-27.103-96.576-50.256-119.807 21.155 4.271 41.56 11.875 60.329 22.605 8.419 4.813 15.864-8.211 7.444-13.022-32.759-18.729-70.138-28.628-108.094-28.628-58.239 0-112.992 22.669-154.174 63.831-41.183 41.163-63.863 95.892-63.863 154.106 0 67.848 31.03 130.697 83.933 171.87h-94.376c-14.243 0-25.831 11.587-25.831 25.831v70.532c0 14.243 11.588 25.83 25.831 25.83h30.161c9.697 0 9.697-15 0-15h-30.161c-5.973 0-10.831-4.858-10.831-10.831v-70.532c0-5.972 4.858-10.831 10.831-10.831h279.216c5.973 0 10.831 4.858 10.831 10.831v70.532c0 5.972-4.858 10.831-10.831 10.831h-209.092c-9.697 0-9.697 15 0 15h209.092c14.243 0 25.831-11.587 25.831-25.831v-64.116c20.328-7.615 39.24-18.156 56.429-31.418l.165 71.681c.034 15.005 19.701 21.556 28.739 9.598l28.936-38.284c.219-.291.572-.437.94-.38l47.431 7.408c14.586 2.272 24.395-16.07 13.981-26.878zm-60.591-259.928c6.833 20.483 10.439 42.107 10.439 64.085 0 22.054-3.51 43.619-10.316 64.085h-99.953c2.725-20.453 4.168-42.007 4.168-64.085 0-22.395-1.435-43.895-4.105-64.085zm-149.832 235.955h-85.532c-14.817-22.899-26.014-55.309-32.563-92.785h150.659c-6.55 37.477-17.747 69.887-32.564 92.785zm-120.441-107.785c-2.79-20.343-4.261-41.92-4.261-64.085 0-22.116 1.462-43.68 4.27-64.085h155.332c2.808 20.405 4.27 41.969 4.27 64.085 0 22.165-1.471 43.742-4.261 64.085zm-125.361-64.085c0-22.385 3.654-43.931 10.382-64.085h99.824c-2.67 20.19-4.105 41.69-4.105 64.085 0 22.078 1.443 43.632 4.168 64.085h-99.959c-6.742-20.345-10.31-41.926-10.31-64.085zm259.375-145.868c8.253 19.418 14.652 42.076 18.988 66.783h-150.653c4.336-24.706 10.735-47.365 18.988-66.783 15.414-36.268 35.949-57.069 56.339-57.069s40.924 20.801 56.338 57.069zm-96.638-53.048c-23.165 23.226-41.24 66.138-50.28 119.831h-96.403c25.824-60.765 80.465-106.45 146.683-119.831zm-68.872 370.051c-35.396-22.606-62.184-54.809-77.909-92.05h96.565c6.146 36.364 16.514 68.497 30.235 92.785h-47.936c-.296-.264-.61-.514-.955-.735zm184.104 17.528c-2.66-7.098-8.357-12.722-15.502-15.283 14.146-24.457 24.812-57.178 31.085-94.294h96.543c-4.553 10.736-10.055 21.105-16.475 31.013l-10.23-10.619c-9.644-10.014-27.53-2.963-27.499 11.123l.099 42.772c-17.361 15.047-36.845 26.89-58.021 35.288zm167.618 18.718c-.327.628-.766.559-1.027.519l-47.43-7.408c-5.835-.912-11.662 1.447-15.222 6.155l-28.937 38.286c-.873.651-1.464.455-1.772-.588l-.309-133.777c.257-.99.823-1.217 1.696-.682l92.837 96.365c.183.189.488.506.164 1.13z" />
+                <path style="fill:rgb(0, 0, 0)"
+                    d="m100.345 477.467 15.734-48.499c2.993-9.224-11.278-13.854-14.268-4.629l-9.428 29.06-9.727-23.677c-2.496-6.078-11.379-6.078-13.875 0l-9.725 23.678-9.429-29.061c-2.99-9.224-17.26-4.595-14.268 4.629l15.735 48.499c2.093 6.451 11.484 6.833 14.071.535l10.554-25.691 10.554 25.691c2.599 6.326 11.963 5.968 14.072-.535z" />
+                <path style="fill:rgb(0, 0, 0)"
+                    d="m147.746 482.647c3.134.119 6.028-1.735 7.223-4.645l10.553-25.691 10.554 25.691c2.567 6.249 11.963 5.962 14.071-.535l15.735-48.499c2.993-9.224-11.278-13.854-14.268-4.629l-9.429 29.061-9.727-23.677c-2.496-6.078-11.379-6.078-13.875 0l-9.726 23.677-9.429-29.06c-2.99-9.224-17.26-4.595-14.268 4.629l15.735 48.499c.973 2.991 3.708 5.06 6.851 5.179z" />
+                <path style="fill:rgb(0, 0, 0)"
+                    d="m237.548 482.647c3.124.119 6.027-1.734 7.223-4.645l10.554-25.691 10.554 25.691c2.567 6.249 11.963 5.962 14.071-.535l15.735-48.499c2.993-9.224-11.278-13.854-14.268-4.629l-9.429 29.061-9.727-23.677c-2.496-6.078-11.379-6.078-13.875 0l-9.726 23.677-9.429-29.061c-2.992-9.223-17.26-4.595-14.268 4.629l15.735 48.499c.972 2.992 3.707 5.061 6.85 5.18z" />
+            </g>
+        </symbol>
+
+        <symbol id="vk__2" viewBox="0 0 48 48">
+            <g>
+                <path fill="#1976d2"
+                    d="M42,37c0,2.762-2.238,5-5,5H11c-2.761,0-5-2.238-5-5V11c0-2.762,2.239-5,5-5h26c2.762,0,5,2.238,5,5 V37z" />
+                <path fill="#fff"
+                    d="M35.937,18.041c0.046-0.151,0.068-0.291,0.062-0.416C35.984,17.263,35.735,17,35.149,17h-2.618 c-0.661,0-0.966,0.4-1.144,0.801c0,0-1.632,3.359-3.513,5.574c-0.61,0.641-0.92,0.625-1.25,0.625C26.447,24,26,23.786,26,23.199 v-5.185C26,17.32,25.827,17,25.268,17h-4.649C20.212,17,20,17.32,20,17.641c0,0.667,0.898,0.827,1,2.696v3.623 C21,24.84,20.847,25,20.517,25c-0.89,0-2.642-3-3.815-6.932C16.448,17.294,16.194,17,15.533,17h-2.643 C12.127,17,12,17.374,12,17.774c0,0.721,0.6,4.619,3.875,9.101C18.25,30.125,21.379,32,24.149,32c1.678,0,1.85-0.427,1.85-1.094 v-2.972C26,27.133,26.183,27,26.717,27c0.381,0,1.158,0.25,2.658,2c1.73,2.018,2.044,3,3.036,3h2.618 c0.608,0,0.957-0.255,0.971-0.75c0.003-0.126-0.015-0.267-0.056-0.424c-0.194-0.576-1.084-1.984-2.194-3.326 c-0.615-0.743-1.222-1.479-1.501-1.879C32.062,25.36,31.991,25.176,32,25c0.009-0.185,0.105-0.361,0.249-0.607 C32.223,24.393,35.607,19.642,35.937,18.041z" />
+            </g>
+        </symbol>
+    </svg>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="header__log">
+                </div>
+                <nav class="nav" id="nav">
+                    <a class="nav__link" href="#" data-scroll="#features">Предметы</a>
+                    <a class="nav__link" href="#" data-scroll="#works">Ученики</a>
+                    <a class="nav__link" href="#" data-scroll="#team">Учителя</a>
+                    <a class="nav__link" href="#" data-scroll="#reviews">Галерея</a>
+
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger__item">Menu</span>
+                </button>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- Intro -->
+    <div class="intro" id="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <h1 class="intro__title">Наш лучший класс</h1>
+                <h1 class="intro__title intro--2">9Г</h1>
+                <h2 class="intro__subtitle">Наш девиз: Мы своей добьёмся цели! Захотим - на ноль разделим!</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="features">
+        <div class="features">
+            <div class="features__item">
+                <img class="features__icon" src="img/features/algebra.png" alt="">
+                <h4 class="features__title">Алгебра</h4>
+                <a class="btn  btn--blue" href="#openModal"> Страница урока</a>
+            </div>
+
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/physik.png" alt="">
+                <h4 class="features__title">Физика</h4>
+                <a class="btn  btn--blue" href="#openModal2"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/russia.png" alt="">
+                <h4 class="features__title">Русский язык</h4>
+                <a class="btn  btn--blue" href="#openModal3"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/informatika.png" alt="">
+                <h4 class="features__title">Информатика</h4>
+                <a class="btn  btn--blue" href="#openModal4"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/geography.png" alt="">
+                <h4 class="features__title">География</h4>
+                <a class="btn  btn--blue" href="#openModal5"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/english.png" alt="">
+                <h4 class="features__title">Английский язык</h4>
+                <a class="btn  btn--blue" href="#openModal6"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/biology.png" alt="">
+                <h4 class="features__title">Биология</h4>
+                <a class="btn  btn--blue" href="#openModal7"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/literatura.png" alt="">
+                <h4 class="features__title">Литература</h4>
+                <a class="btn  btn--blue" href="#openModal8"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/history.png" alt="">
+                <h4 class="features__title">История</h4>
+                <a class="btn  btn--blue" href="#openModal9"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/physic_culture.png" alt="">
+                <h4 class="features__title">Физическая Культура</h4>
+                <a class="btn  btn--blue" href="#openModal10"> Страница урока</a>
+            </div>
+            <div class="features__item">
+                <img class="features__icon" src="img/features/geometry.png" alt="">
+                <h4 class="features__title">Геометрия</h4>
+                <a class="btn  btn--blue" href="#openModal14"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/obshestvosnanie.png" alt="">
+                <h4 class="features__title">Обществознание</h4>
+                <a class="btn  btn--blue" href="#openModal15"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/OBG.png" alt="">
+                <h4 class="features__title">ОБЖ</h4>
+                <a class="btn  btn--blue" href="#openModal16"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/himia.png" alt="">
+                <h4 class="features__title">Химия</h4>
+                <a class="btn  btn--blue" href="#openModal18"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/statistics.png" alt="">
+                <h4 class="features__title">Статистика</h4>
+                <a class="btn  btn--blue" href="#openModal19"> Страница урока</a>
+            </div>
+
+            <div class="features__item">
+                <img class="features__icon" src="img/features/technical-drawing.png" alt="">
+                <h4 class="features__title">Черчение</h4>
+                <a class="btn  btn--blue" href="#openModal20"> Страница урока</a>
+            </div>
+
+        </div><!-- /.features -->
+    </div><!-- /.container -->
+
+
+
+    <!-- Works -->
+    <div class="works" id="works">
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1080.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Богачева Василиса Игоревна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1461.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Вершинин Дмитрий Евгеньевич</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 2498.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Власова Анастасия Евгеньевна</div>
+                </div>
+            </a>
+        </div>
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 0257.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Воронина Диана Алексеевна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1338.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Горин Павел Константинович</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 2250.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Гусева Карина Константиновна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1767.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Ерёмочкин Андрей Андреевич</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1378.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Жуков Лев Алексеевич</div>
+                </div>
+            </a>
+        </div>
+
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1645.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Клепиковский Денис Дмитриевич</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/86.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Клименко Александр Романович</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 0765.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Козлова Анна Юрьевна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 0937.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Копосова Арина Владиславовна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1719.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Кордумов Савелий Максимович</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 0113.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Кошкина Полина Юрьевна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1212.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Лукина Юлия Ильинична</div>
+                </div>
+            </a>
+        </div>
+
+        <!--<div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/9.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Лукьянов Алексей Иванович</div>
+                </div>
+            </a>
+        </div>-->
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1513.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Моданов Андрей Вячеславович</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1273.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Мотовилов Глеб Константинович</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 0169.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Парфёнов Степан Владимирович</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 0390.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Плёсова Полина Евгеньевна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1817.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Попова Ярослава Александровна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 2081.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Пороскова Екатерина Сергеевна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 2179.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Приказчикова Влада Руслановна</div>
+                </div>
+            </a>
+        </div>
+
+        <!--<div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/6.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Смирнова Ульяна Вадимовна</div>
+                </div>
+            </a>
+        </div>-->
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 0699.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Сунгуров Кирилл Вячеславович</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 1575.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Телепнёв Егор Александрович</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 0182.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Туйбова Есения Алексеевна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 0579.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Тюпышева Софья Олеговна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 2365.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Федотова Ульяна Игоревна</div>
+                </div>
+            </a>
+        </div>
+
+        <div class="works__item">
+            <a href="#">
+                <img class="works__photo" src="img/works/17_9g 2015.jpg" alt="">
+                <div class="works__content">
+                    <div class="works__title">Шарухина Юлия Антоновна</div>
+                </div>
+            </a>
+        </div>
+    </div><!-- /.works -->
+
+
+
+    <!-- Team -->
+    <div class="team" id="team">
+        <div class="container">
+            <div class="team__inner">
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_25.jpg" alt="">
+                    <div class="team__name">Никитина Кристина Владимировна</div>
+                    <div class="team__prof">Классный Руководитель, Литература</div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_26.jpg" alt="">
+                    <div class="team__name">Армутова Марина Сергеевна</div>
+                    <div class="team__prof">Предмет: Русский Язык</div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank" class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_2.jpg" alt="">
+                    <div class="team__name">Ксения Сергеевна Шутова</div>
+                    <div class="team__prof">Предмет: Алгебра, Геометрия, Статистика</div>
+                    <div class="social">
+                        <a class="social__item" href="https://vk.com/id6592593" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a href="https://dnevnik.ru/user/user.aspx?user=1000008991670" target="_blank"
+                            class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_24.jpg" alt="">
+                    <div class="team__name">Крюкова Светлана Николаевна</div>
+                    <div class="team__prof">Предмет: Физика</div>
+                    <div class="social">
+                        <a href="https://dnevnik.ru/user/user.aspx?user=418054" target="_blank"
+                            class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_15.jpg" alt="">
+                    <div class="team__name">Паршев Александр Анатольевич</div>
+                    <div class="team__prof">Предмет: Информатика</div>
+                    <div class="social">
+                        <a href="https://dnevnik.ru/user/user.aspx?user=1000003762634" target="_blank"
+                            class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_5.jpg" alt="">
+                    <div class="team__name">Корзников Роман Васильевич</div>
+                    <div class="team__prof">Предмет: Информатика</div>
+                    <div class="social">
+                        <a href="https://dnevnik.ru/user/user.aspx?user=594036" target="_blank" class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_7.jpg" alt="">
+                    <div class="team__name">Сахно Оксана Николаевна</div>
+                    <div class="team__prof">Предмет: История, Обществознание</div>
+                    <div class="social">
+                        <a href="https://dnevnik.ru/user/user.aspx?user=339942" target="_blank" class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_8.jpg" alt="">
+                    <div class="team__name">Галионова Галина Николаевна</div>
+                    <div class="team__prof">Предмет: География</div>
+                    <div class="social">
+                        <a class="social__item" href="https://vk.com/id591178879" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a href="https://dnevnik.ru/user/user.aspx?user=1000000088600" target="_blank"
+                            class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_6.jpg" alt="">
+                    <div class="team__name">Шапошникова Татьяна Сергеевна</div>
+                    <div class="team__prof">Предмет: Биология</div>
+                    <div class="social">
+                        <a class="social__item" href="https://vk.com/id58831917" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a href="https://dnevnik.ru/user/user.aspx?user=1000000502143" target="_blank"
+                            class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/Ivanova-Irina-Nikolaevna-650x974.jpg" alt="">
+                    <div class="team__name">Иванова Ирина Николаевна</div>
+                    <div class="team__prof">Предмет: Английский язык</div>
+                    <div class="social">
+                        <a class="social__item" href="https://vk.com/id138198378" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a href="https://dnevnik.ru/user/user.aspx?user=1000007855364" target="_blank" class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_16.jpg" alt="">
+                    <div class="team__name">Старовая Ирина Юрьевна</div>
+                    <div class="team__prof">Предмет: Английский язык</div>
+                    <div class="social">
+                        <a class="social__item" href="https://vk.com/arisemushina" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a href="https://dnevnik.ru/user/user.aspx?user=1000008940395" target="_blank"
+                            class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_11.jpg" alt="">
+                    <div class="team__name">Вахтова Ирина Николаевна</div>
+                    <div class="team__prof">Предмет: Физическая Культура</div>
+                    <div class="social">
+                        <a class="social__item" href="https://vk.com/id493937294" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a href="https://dnevnik.ru/user/user.aspx?user=340307" target="_blank" class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_12.jpg" alt="">
+                    <div class="team__name">Захарова Ольга Аркадьевна</div>
+                    <div class="team__prof">Предмет: Черчение</div>
+                    <div class="social">
+                        <a class="social__item" href="" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a href="" target="_blank" class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_27.jpg" alt="">
+                    <div class="team__name">Амплеев Артур Валентинович</div>
+                    <div class="team__prof">Предмет: ОБЖ</div>
+                    <div class="social">
+                        <a class="social__item" href="#" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a href="#" target="_blank"
+                            class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+                <div class="team__item">
+                    <img class="team__photo" src="img/team/team_19.jpg" alt="">
+                    <div class="team__name">Курочкина Елена Владимировна</div>
+                    <div class="team__prof">Предмет: Химия </div>
+                    <div class="social">
+                        <a href="#" target="_blank" class="social__item">
+                            <img src="img/reviews/logo-dnevnik-ru.png" alt="" class="social__icon">
+                        </a>
+                    </div>
+                </div>
+            </div><!-- /.team__inner -->
+        </div><!-- /.container -->
+    </div><!-- /.team -->
+
+    <!-- Testimonials -->
+    <div class="reviews" id="reviews">
+        <div class="container">
+            <div class="slider">
+                <div class="nav">
+                    <div class="prev">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6"></polyline>
+                        </svg>
+                    </div>
+                    <div class="next">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke-width="2.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <div class="item is-active" style="background-image: url(bg-photo.jpg)">
+                    <div class="content">
+                        <div class="item-title">День Здоровья</div>
+                        <div class="item-text">г.Северодвинск 20.05.2019</div>
+                    </div>
+                    <div class="imgs">
+                        <div class="grid">
+                            <div class="img img-1">
+                                <img src="img/photos/Zdorovie_2.jpg" />
+                            </div>
+                            <div class="img img-2">
+                                <img src="img/photos/Zdorovie_1.jpg" />
+                            </div>
+                            <div class="img img-3">
+                                <img src="img/photos/Zdorovie_3.jpg" />
+                            </div>
+                            <div class="img img-4">
+                                <img src="img/photos/Zdorovie_4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(bg-photo.jpg)">
+                    <div class="content">
+                        <div class="item-title">Лукоморье</div>
+                        <div class="item-text">г.Архангельск 2.03.2020</div>
+                    </div>
+                    <div class="imgs">
+                        <div class="grid">
+                            <div class="img img-1">
+                                <img src="img/photos/T_B_Lukomorie_3.jpg" />
+                            </div>
+                            <div class="img img-2">
+                                <img src="img/photos/T_B_Lukomorie_1.jpg" />
+                            </div>
+                            <div class="img img-3">
+                                <img src="img/photos/T_B_Lukomorie_2.jpg" />
+                            </div>
+                            <div class="img img-4">
+                                <img src="img/photos/T_B_Lukomorie_4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item" style="background-image: url(bg-photo.jpg)">
+                    <div class="content">
+                        <div class="item-title">Поход на о.Ягры</div>
+                        <div class="item-text">г.Северодвинск 29.05.2021</div>
+                    </div>
+                    <div class="imgs">
+                        <div class="grid">
+                            <div class="img img-1">
+                                <img src="img/photos/Yagr_2.jpg" />
+                            </div>
+                            <div class="img img-2">
+                                <img src="img/photos/Yagr_1.jpg" />
+                            </div>
+                            <div class="img img-3">
+                                <img src="img/photos/Yagr_3.jpg" />
+                            </div>
+                            <div class="img img-4">
+                                <img src="img/photos/Yagr_4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Еще слайды -->
+            
+                <div class="item" style="background-image: url(bg-photo.jpg)">
+                    <div class="content">
+                        <div class="item-title">Игра в кальмара</div>
+                        <div class="item-text">г.Северодвинск 25.12.2021</div>
+                    </div>
+                    <div class="imgs">
+                        <div class="grid">
+                            <div class="img img-1">
+                                <img src="img/photos/Kalvar_3.jpg" />
+                            </div>
+                            <div class="img img-2">
+                                <img src="img/photos/Kalvar_1.jpg" />
+                            </div>
+                            <div class="img img-3">
+                                <img src="img/photos/Kalvar_2.jpg" />
+                            </div>
+                            <div class="img img-4">
+                                <img src="img/photos/Kalvar_4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="item" style="background-image: url(bg-photo.jpg)">
+                    <div class="content">
+                        <div class="item-title">Поход на о.Ягры</div>
+                        <div class="item-text">о.Ягры 28.05.2022</div>
+                    </div>
+                    <div class="imgs">
+                        <div class="grid">
+                            <div class="img img-1">
+                                <img src="img/photos/Pohot3.jpg" />
+                            </div>
+                            <div class="img img-2">
+                                <img src="img/photos/Pohot2.jpg" />
+                            </div>
+                            <div class="img img-3">
+                                <img src="img/photos/Pohod1.jpg" />
+                            </div>
+                            <div class="img img-4">
+                                <img src="img/photos/Pohot4.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="reviews__slider" id="reviewsSlider">
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="img/reviews/1.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">Поездка эта была ещё в 5 классе,<br> нам она очень запомнилась..
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="slick-item">
+                    <div class="reviews__item">
+                        <div class="reviews__photo">
+                            <img class="reviews__img" src="img/reviews/2.jpg" alt="">
+                        </div>
+                        <div class="reviews__content">
+                            <div class="reviews__text">Наш с классом первый праздник.<br>Начало знакомства с "Лицеем
+                                №17"</div>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+
+        </div><!-- /.container -->
+    </div><!-- /.reviews -->
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer__inner">
+                <div class="footer__block">
+                    <h4 class="footer__title">Находимся на:</h4>
+                    <address class="footer__address">
+                        <div>164504 город Северодвинск</div>
+                        <div>улица Капитана Воронина, 24</div>
+                    </address>
+                </div>
+
+                <div class="footer__block">
+                    <h4 class="footer__title">Наши контакты : </h4>
+                    <div class="social  social--footer">
+                        <a class="social__item" href="https://vk.com/club185824274" target="_blank" title="Наша группа">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="https://vk.com/lyceum_17" target="_blank"
+                            title="Группа Лицея №17">
+                            <svg class="social__icon">
+                                <use xlink:href="#vk__2"></use>
+                            </svg>
+                        </a>
+                        <a class="social__item" href="http://lyceum17.ru/" target="_blank" title="Сайт лицея">
+                            <img class="social__icon" src="img/icons8-интернет-96.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div><!-- /.footer__inner -->
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1469.2957101722466!2d39.80802134692382!3d64.55861722328963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4418423e2a5c874d%3A0x5b83ee56fb741540!2z0JvQuNGG0LXQuSDihJYxNw!5e0!3m2!1sru!2sru!4v1632667071227!5m2!1sru!2sru"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" alt="Наша школа"></iframe>
+            </div>
+            
+        </div><!-- /.container -->
+
+        <div class="copyright">
+            <div class="container">
+                <div class="copyright__text">
+                    <div><span>Den corp. | <a class="copyright__href" href="https://vk.com/deni_nagib" target="_blank"
+                                alt="мой вк">Клепиковским Денисом</a></span></div>
+                    <div>Созданно © 2024</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal-->
+    <div id="openModal" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="modal-title">Алгебра</p>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Шутова Ксения Сергеевна</div><br><br>
+                        <div class="room">Кабинет:</div>
+                        <div class="room_lesson">12</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                            <div class="lessons">
+                            Понедельник: 6 урок<br>
+                            Среда: 1 урок <br>
+                            Пятница: 2 и 3 уроки </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div id="openModal2" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Физика</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Крюкова Светлана Николаевна</div><br><br>
+                        <div class="room">Кабинет:</div>
+                        <div class="room_lesson">32</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                            <div class="lessons">
+                            Понедельник: 4 урок <br>
+                            Вторник: 5 урок <br>
+                            Среда: 6 урок<br>
+                            Четверг: 6 урок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal3" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Русский язык</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Армутова Марина Сергеевна</div><br><br>
+                        <div class="room">Кабинет:</div>
+                        <div class="room_lesson">13</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                        <div class="lessons">
+                            Понедельник: 1 урок<br>
+                            Среда: 4 урок<br>
+                            Пятница: 1 урок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal4" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Информатика</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Паршев Александр Анатольевич<br>Корзников Роман Васильевич</div><br><br>
+                        <div class="room">Кабинет:</div>
+                        <div class="room_lesson">28 и 37</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                        <div class="lessons">
+                            Понедельник: 5 урок<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal5" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">География</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Галионова Галина Николаевна</div><br><br>
+                        <div class="room">Кабинет:</div>
+                        <div class="room_lesson">27</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                        <div class="lessons">
+                            Понедельник: 3 урок<br>
+                            Четверг: 4 урок <br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal6" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Английский язык</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Иванова Ирина Николаевна<br>Старовая Ирина Юрьевна</div><br><br>
+                        <div class="room">Кабинет:</div>
+                        <div class="room_lesson">39/18/29/29а</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                        <div class="lessons">
+                            Вторник: 4 урок<br>
+                            Четверг: 1 урок <br>
+                            Пятница: 6 урок </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal7" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Биология</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Шапошникова Татьяна Сергеевна</div><br><br>
+                        <div class="room">Кабинет:</div>
+                        <div class="room_lesson">31</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                        <div class="lessons">
+                            Среда: 3 урок<br>
+                            Суббота: 1 урок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal8" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Литература</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Никитина Кристина Владимировна</div><br><br>
+                        <div class="room">Кабинет:</div>
+                        <div class="room_lesson">6</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                        <div class="lessons">
+                            Вторник: 3 урок<br>
+                            Среда: 5 урок<br>
+                            Суббота: 5 урок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal9" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">История</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Сахно Оксана Николаевна</div><br><br>
+                        <div class="room">Кабинет:</div>
+                        <div class="room_lesson">16</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                        <div class="lessons">
+                            Вторник: 6 урок<br>
+                            Четверг: 5 урок</br>
+                            Пятница: 4 урок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal10" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Физическая Культура</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Вахтова Ирина Николаевна</div><br><br>
+                        <div class="room">Кабинет: Спортивный зал</div>
+                        <div class="room_lesson">Спорт зал</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                        <div class="lessons">
+                            Вторник: 2 урок<br>
+                            Четверг: 2 урок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="openModal14" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Геометрия</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Шутова Ксения Сергеевна</div><br><br>
+                        <div class="room">Кабинет:</div>
+                        <div class="room_lesson">12</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                        <div class="lessons">
+                            Вторник: 1 урок<br>
+                            Четверг: 3 урок<br>
+                            Суббота: 4 урок<br></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal15" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Обществознание</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                        <div class="name_teacher">Сахно Оксана Николаевна</div><br><br>
+                        <div class="room">Кабинет:</div>
+                        <div class="room_lesson">16</div><br>
+                        <div class="lessons_days">Расписание:</div>
+                        <div class="lessons">
+                            Суббота: 2 урок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="openModal16" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">ОБЖ</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                    <div class="name_teacher">Амплеев Артур Валентинович</div><br><br>
+                    <div class="room">Кабинет:</div>
+                    <div class="room_lesson">29а</div><br>
+                    <div class="lessons_days">Расписание:</div>
+                    <div class="lessons">
+                        Пятница: 7 урок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="openModal18" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Химия</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                    <div class="name_teacher">Курочкина Елена Владимировна</div><br><br>
+                    <div class="room">Кабинет:</div>
+                    <div class="room_lesson">30</div><br>
+                    <div class="lessons_days">Расписание:</div>
+                    <div class="lessons">
+                        Понедельник: 2 урок<br>
+                        Пятница: 5 урок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="openModal19" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Статистика</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                    <div class="name_teacher">Шутова Ксения Сергеевна</div><br><br>
+                    <div class="room">Кабинет:</div>
+                    <div class="room_lesson">12</div><br>
+                    <div class="lessons_days">Расписание:</div>
+                    <div class="lessons">
+                        Среда: 2 урок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="openModal20" class="modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Черчение</h3>
+                    <a href="#close" title="Close" class="close">×</a>
+                </div>
+                <div class="modal-body">
+                    <div class="modal_teacher">Учитель:</div>
+                    <div class="name_teacher">Захарова Ольга Аркадьевна</div><br><br>
+                    <div class="room">Кабинет:</div>
+                    <div class="room_lesson">6</div><br>
+                    <div class="lessons_days">Расписание:</div>
+                    <div class="lessons">
+                        Суббота: 3 урок</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="app.js"></script>
+
+
+</body>
+
+</html>
